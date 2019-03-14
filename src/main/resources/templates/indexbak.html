@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合同快速制作</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/fileinput.css" rel="stylesheet">
+    <link href="css/fileinput-rtl.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/fileinput.js"></script>
+</head>
+<body>
+<form>
+    <div class="row">
+        <div class="text-center" style="font-size: 70px">在线生成合同</div>
+    </div>
+    <div class="row">
+
+        <!--<div class="btn-group">
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                请选择合同类型
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">贷款合同</a></li>
+                <li><a href="#">租房合同</a></li>
+                <li><a href="#">车贷合同</a></li>
+            </ul>
+        </div>-->
+        &nbsp;&nbsp;&nbsp;
+        <select id="sel_driver" class="btn selectpicker show-tick btn-success" data-live-search="true" style="width: 20%">
+            <option value="0">请选择合同类型</option>
+            <option value="1">贷款合同</option>
+            <option value="2">租房合同</option>
+            <option value="3">车贷合同</option>
+        </select>
+        <!--<button type="button" id="myButton"  class="btn btn-info" autocomplete="off">
+            生成合同
+        </button>-->
+    </div>
+    <div class="row">
+        <div class="table-group">
+            <input id="f_upload" type="file" class="file"/>
+        </div>
+    </div>
+</form>
+
+</body>
+<script>
+    $('#f_upload').fileinput({
+        language: 'zh', //设置语言
+        uploadUrl: "/uploadFile", //上传的地址
+        allowedFileExtensions : ['jpg', 'png','gif'],//接收的文件后缀,
+        maxFileCount: 100,
+        enctype: 'multipart/form-data',
+        showUpload: true, //是否显示上传按钮
+        showCaption: false,//是否显示标题
+        browseClass: "btn btn-primary", //按钮样式
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+        uploadExtraData:function(){//向后台传递参数
+            var data={
+                type:$("#sel_driver").val()
+                /*versionNum:$("#versionNum").val(),
+                description:$("#description").val()*/
+            };
+            return data;
+        },
+    });
+
+
+</script>
+</html>

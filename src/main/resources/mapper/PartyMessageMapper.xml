@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yuyin.htmlToPdf.dao.PartyMessageMapper" >
+  <resultMap id="BaseResultMap" type="com.yuyin.htmlToPdf.Bean.PartyMessage" >
+    <result column="id" property="id" jdbcType="VARCHAR" />
+    <result column="contract_id" property="contractId" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="nation" property="nation" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="birth" property="birth" jdbcType="VARCHAR" />
+    <result column="idcard" property="idcard" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="phono" property="phono" jdbcType="VARCHAR" />
+    <result column="create_user" property="createUser" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="flag" property="flag" jdbcType="INTEGER" />
+    <result column="issueDate" property="issueDate" jdbcType="VARCHAR" />
+    <result column="authority" property="authority" jdbcType="VARCHAR" />
+    <result column="expiryDate" property="expiryDate" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.yuyin.htmlToPdf.Bean.PartyMessage" >
+    insert into party_message (id, contract_id, name, 
+      nation, sex, birth, 
+      idcard, address, phono, 
+      create_user, create_time, flag,issueDate,authority,expiryDate,personType
+      )
+    values (#{id,jdbcType=VARCHAR}, #{contractId,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{nation,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, #{birth,jdbcType=VARCHAR}, 
+      #{idcard,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{phono,jdbcType=VARCHAR}, 
+      #{createUser,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{flag,jdbcType=INTEGER},
+      #{issueDate,jdbcType=VARCHAR},#{authority,jdbcType=VARCHAR},#{expiryDate,jdbcType=VARCHAR},
+      #{personType,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.yuyin.htmlToPdf.Bean.PartyMessage" >
+    insert into party_message
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="contractId != null" >
+        contract_id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="nation != null" >
+        nation,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="birth != null" >
+        birth,
+      </if>
+      <if test="idcard != null" >
+        idcard,
+      </if>
+      <if test="address != null" >
+        address,
+      </if>
+      <if test="phono != null" >
+        phono,
+      </if>
+      <if test="createUser != null" >
+        create_user,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="flag != null" >
+        flag,
+      </if>
+      <if test="flag != null" >
+        issueDate,
+      </if>
+      <if test="flag != null" >
+        authority,
+      </if>
+      <if test="flag != null" >
+        expiryDate,
+      </if>
+      <if test="personType != null" >
+        personType,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="contractId != null" >
+        #{contractId,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="nation != null" >
+        #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birth != null" >
+        #{birth,jdbcType=VARCHAR},
+      </if>
+      <if test="idcard != null" >
+        #{idcard,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="phono != null" >
+        #{phono,jdbcType=VARCHAR},
+      </if>
+      <if test="createUser != null" >
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="flag != null" >
+        #{flag,jdbcType=INTEGER},
+      </if>
+      <if test="issueDate != null" >
+        #{issueDate,jdbcType=VARCHAR},
+      </if>
+      <if test="authority != null" >
+        #{authority,jdbcType=VARCHAR},
+      </if>
+      <if test="expiryDate != null" >
+        #{expiryDate,jdbcType=VARCHAR},
+      </if>
+      <if test="personType != null" >
+        #{personType,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="findPartyMessage" resultMap="BaseResultMap" parameterType="com.yuyin.htmlToPdf.Bean.PartyMessage">
+    select * from party_message pm
+    <where>
+      1=1
+      <if test="contractId != null and contractId != ''">
+        and pm.contract_id = #{contractId,jdbcType=VARCHAR}
+      </if>
+      <if test="idcard != null and idcard != ''">
+        and pm.idcard = #{idcard,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
+</mapper>

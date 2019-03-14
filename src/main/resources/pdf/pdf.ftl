@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+    <style type="text/css">
+        body {
+            font-family: SimSun;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p style="text-align:center"><strong><span style="font-size:16px;font-family:SimSun">赠与合同</span></strong></p><p style="text-align:center"><strong><span style="font-size:16px;font-family: SimSun">&nbsp;</span></strong></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:SimSun">甲方（赠与人）：<span style="text-decoration:underline;">${username}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>（写明姓名、住址）</span></p><p style="text-indent:28px"><span style=";font-family:SimSun">乙方（受赠人）：<span style="text-decoration:underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>（写明姓名、住址）</span></p><p style="text-indent:28px"><span style=";font-family:SimSun">&nbsp;</span></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:SimSun">甲乙双方就赠送（赠与的标的物，如赠与微机一台，应写明“浪潮386型微机一台”，如其他物品，也应写明该赠与物是什么、在什么位置）事宜达成协议如下：</span></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:SimSun">一、甲方将其所有的<span style="text-decoration:underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>（标的物）赠送给乙方，其所有权证明为：（写明证明甲方拥有所有权的证据名称，如赠与房屋，就应有房产所有权证，赠与微机应有购买该微机的发票等）</span></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:SimSun">二、赠与物的交付</span></p><p style="text-indent:28px"><span style=";font-family:SimSun">（写明交付的条件，在什么时间、什么地点交付，办理什么手续等等）。</span></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:SimSun">三、乙方应在<span style="text-decoration:underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>期限内办理所有权转移的手续，逾期不办的，视为拒绝赠与（也可以约定其他条件）。</span></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:SimSun">四、本合同自____日起生效（可以写自分证之日起生效）。</span></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:SimSun">五、争议的解决方式</span></p><p style="text-indent:28px"><span style=";font-family:SimSun">本合同在履行过程中发生的争议，由双方当事人协商解决；协商或调解不成的，按下列第<span style="text-decoration:underline;"> 1 </span>种方式解决：</span></p><p style="text-indent:28px"><span style=";font-family:SimSun">1.</span><span style=";font-family:SimSun">提交盐城仲裁委员会仲裁；</span></p><p style="text-indent:28px"><span style=";font-family:SimSun">2.</span><span style=";font-family:SimSun">依法向人民法院起诉。</span></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=";font-family:SimSun">六、本合同一式两份，双方各执一份。</span></p><p><span style=";font-family:SimSun">&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p style="text-indent:28px"><span style=";font-family:SimSun">甲方：<span style="text-decoration:underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>（签字、盖章）&nbsp;&nbsp;&nbsp;&nbsp;乙方：<span style="text-decoration:underline;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>（签字、盖章）</span></p><p style="text-indent:28px"><span style=";font-family:SimSun">&nbsp;</span></p><p style="text-align:right;text-indent:28px"><span style=";font-family:SimSun">年&nbsp; 月&nbsp; 日</span></p><p>&nbsp;</p><p><br/></p>
+</div>
+</body>
+</html>
